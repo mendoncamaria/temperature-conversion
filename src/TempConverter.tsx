@@ -1,46 +1,5 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: #bee1c0;
-`;
-
-const TemperatureContainer = styled.div`
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-  height: auto;
-
-  @media (max-width: 600px) {
-    width: 80%;
-  }
-`;
-
-const Label = styled.label`
-  font-size: 18px;
-  margin-bottom: 10px;
-`;
-
-const Input = styled.input`
-  padding: 10px;
-  font-size: 16px;
-`;
-
-const Select = styled.select`
-  padding: 10px;
-  font-size: 16px;
-`;
-
-const Result = styled.div`
-  font-size: 24px;
-  font-weight: bold;
-`;
+import { Container, Input, Label, Result, Select, TemperatureContainer } from './Styles';
 
 function TemperatureConverter() {
   const [temperature, setTemperature] = useState('');
