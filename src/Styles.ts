@@ -7,7 +7,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #bee1c0;
+  background-color: #ced3ed;
 `;
 
 export const TemperatureContainer = styled.div`
@@ -30,11 +30,15 @@ export const Label = styled.label`
 export const Input = styled.input`
   padding: 10px;
   font-size: 16px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #f0f0f0;
 `;
 
 export const Select = styled.select`
   padding: 10px;
-  font-size: 16px;
+  font-size: 16px; 
+  border-radius: 10px;
 `;
 
 export const Result = styled.div`
