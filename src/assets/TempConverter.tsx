@@ -5,14 +5,21 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #bee1c0;
 `;
 
-const InputContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
+const TemperatureContainer = styled.div`
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  height: auto;
+
+  @media (max-width: 600px) {
+    width: 80%;
+  }
 `;
 
 const Label = styled.label`
@@ -39,7 +46,9 @@ function TemperatureConverter() {
   const [temperature, setTemperature] = useState('');
   const [unit, setUnit] = useState('celsius');
 
-  const handleTemperatureChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleTemperatureChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
     setTemperature(event.target.value);
   };
 
@@ -64,23 +73,27 @@ function TemperatureConverter() {
 
   return (
     <Container>
-      <InputContainer>
-        <Label>Enter Temperature:</Label>
-        <Input
-          type="number"
-          value={temperature}
-          onChange={handleTemperatureChange}
-          placeholder="Enter temperature"
-        />
-      </InputContainer>
-      <InputContainer>
-        <Label>Select Unit:</Label>
-        <Select value={unit} onChange={handleUnitChange}>
-          <option value="celsius">Celsius</option>
-          <option value="fahrenheit">Fahrenheit</option>
-        </Select>
-      </InputContainer>
-      <Result>{convertTemperature()}</Result>
+      <TemperatureContainer>
+        <div style={{ display: 'flex', gap: '2rem', flexDirection: 'column' }}>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <Label>Enter Temperature:</Label>
+            <Input
+              type="number"
+              value={temperature}
+              onChange={handleTemperatureChange}
+              placeholder="Enter temperature"
+            />
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <Label>Select Unit:</Label>
+            <Select value={unit} onChange={handleUnitChange}>
+              <option value="celsius">Celsius</option>
+              <option value="fahrenheit">Fahrenheit</option>
+            </Select>
+          </div>
+        </div>
+        <Result>{convertTemperature()}</Result>
+      </TemperatureContainer>
     </Container>
   );
 }
