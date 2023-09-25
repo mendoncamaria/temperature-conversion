@@ -1,4 +1,4 @@
-import TemperatureConverter from "./assets/TempConverter"
+import TemperatureConverter from "./TempConverter"
 
 function App() {
 
