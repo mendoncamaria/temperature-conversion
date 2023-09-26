@@ -1,27 +1,31 @@
-# React + TypeScript + Vite
+# Temperature Conversion Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This website is particularly built as a part of my Learning Vite and initializing Typescript Application.
 
-Currently, two official plugins are available:
+## About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Overview:
+There will be input and the default conversion is set to Celsius. As soon as you enter the temperature, it takes the available Unit and converts to Fahrenheit.
+You change the Unit to Fahrenheit and it gives output in Celsius.
 
-## Expanding the ESLint configuration
+### Tech Stack
+Typescript + Vite
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### External Libraries
+1. styled-components: For styling the components and page
 
-- Configure the top-level `parserOptions` property like this:
+### Deployment Platform
+Netlify
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Note:
+Do credit me if you plan to use this project.
+
+
+## Steps to Install
+1. Clone the project
+2. Run `npm install` to install all dependencies
+3. Run `npm run dev`
+
+<hr />
+<center>&copy; Maria Mendonca</center>
