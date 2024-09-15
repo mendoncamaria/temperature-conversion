@@ -5,7 +5,7 @@ This website is particularly built as a part of my Learning Vite and initializin
 ## About the Project
 
 ### Overview:
-There will be input and the default conversion is set to Celsius. As soon as you enter the temperature, it takes the available Unit and converts to Fahrenheit.
+There will be input and the default conversion is set to Celsius. When you enter the temperature, it takes the available Unit and converts to Fahrenheit.
 You change the Unit to Fahrenheit and it gives output in Celsius.
 
 ### Tech Stack
