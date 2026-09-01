@@ -1,31 +1,34 @@
-# Temperature Conversion Website
+# 📦 <font color="red">[ARCHIVED]</font> Temperature Conversion Website
 
-This website is particularly built as a part of my Learning Vite and initializing Typescript Application.
+> **Status:** <font color="red">🔴 <b>Archived / Read-Only</b></font>  
+> Built as an initial hands-on exercise to practice TypeScript setup with Vite and component styling using styled-components. This repository is preserved as a historical learning artifact and is no longer maintained.
 
-## About the Project
+---
 
-### Overview:
-There will be input and the default conversion is set to Celsius. When you enter the temperature, it takes the available Unit and converts to Fahrenheit.
-You change the Unit to Fahrenheit and it gives output in Celsius.
+## 🛠️ Tech Stack
 
-### Tech Stack
-Typescript + Vite
+* **Framework & Build Tool:** ReactJS + Vite
+* **Language:** TypeScript
+* **Styling:** styled-components
+* **Deployment Platform:** Netlify
 
-### External Libraries
-1. styled-components: For styling the components and page
+---
 
-### Deployment Platform
-Netlify
+## ✨ Core Features
 
+* **Bi-directional Conversion:** Converts temperature values seamlessly between Celsius and Fahrenheit.
+* **Dynamic Unit Selection:** Interactive dropdown menu to toggle base input units with real-time output updates.
 
-## Note:
-Do credit me if you plan to use this project.
+---
 
+## 💻 Local Development Setup
 
-## Steps to Install
-1. Clone the project
-2. Run `npm install` to install all dependencies
-3. Run `npm run dev`
+```bash
+# Clone the repository
+git clone <your-repository-url>
 
-<hr />
-<center>&copy; Maria Mendonca</center>
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
